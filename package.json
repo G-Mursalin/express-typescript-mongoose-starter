@@ -1,0 +1,40 @@
+{
+  "name": "express-typescript-mongoose-starter",
+  "version": "1.0.0",
+  "description": "Kickstart your TypeScript web projects effortlessly with the TypeScript Express Mongoose starter with ZOD validations and all kinds of error handlers",
+  "main": "./server.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "node ./dist/server.js",
+    "start:dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
+  },
+  "keywords": [
+    "TypeScript",
+    "Express",
+    "ExpressJS",
+    "express.js",
+    "mongoose",
+    "Zod",
+    "Validator",
+    "starter",
+    "boilerplate"
+  ],
+  "author": "Golam Mursalin",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "http-status-codes": "^2.3.0",
+    "mongoose": "^8.3.2",
+    "validator": "^13.11.0",
+    "zod": "^3.23.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/validator": "^13.11.9",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  }
+}
