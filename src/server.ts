@@ -1,14 +1,13 @@
 import app from "./app";
 import mongoose from "mongoose";
+import config from "./app/config";
 
 async function server() {
   try {
-    await mongoose.connect(
-      "mongodb+srv://db_express_typescript_mongoose_starter:suZvbCMfy8oC0quT@cluster0.zuyuakg.mongodb.net/db_express_typescript_mongoose_starter?retryWrites=true&w=majority&appName=Cluster0"
-    );
+    await mongoose.connect(config.database_url);
     console.log("Database is connected");
-    app.listen(5000, () => {
-      console.log(`Server is listening on port ${5000}`);
+    app.listen(config.port, () => {
+      console.log(`Server is listening on port ${config.port}`);
     });
   } catch (error) {
     console.log(error);
